@@ -1,0 +1,164 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+/*	font-family: 'Pangolin', cursive;*/
+	font-family: 'Neucha', cursive;
+}
+
+header {
+	display: flex;
+	cursor: default;
+	background: rgb(230, 230, 250, 0.5);
+}
+
+.image img{
+	margin-top: 10px;
+	margin-left: 50px;
+	width: 50px;
+}
+
+.header_titles{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	text-shadow:  2px 2px 2px gray;
+	letter-spacing: 0.3rem;
+}
+
+h1{
+	font-size: 55px;
+}
+
+h2{
+	font-size: 45px;
+}
+
+main {
+	display: flex;
+}
+
+.menu {
+	padding-left: 20px;
+	width: 15%;
+	min-width: 15%;
+	border-right:2px lightgray solid;
+	padding-right: 20px;
+}
+
+.menu_title{
+	font-size: 50px;
+}
+
+.menu_choice {
+	font-size: 22px;
+	text-shadow:  2px 2px 2px lightgray;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.advertising{
+	border-left: 2px lightgray solid;;
+	min-width: 10%;
+}
+
+
+
+.section {
+	background: rgba(245, 245, 245, 0.3); 
+}
+
+.section_window{
+	margin: 20px 50px 25px 50px;
+	font-size: 30px;
+	letter-spacing: 0.2rem;
+	color: #293133;
+	text-shadow:  2px 2px 2px lightgray;
+}
+
+.pause_block {
+	display: block;
+	animation: changeColor 60s infinite;
+	cursor: default;
+}
+
+@keyframes changeColor {
+	10% {color: red}
+	20% {color: green}
+	30% {color: pink}
+	40% {color: yellowgreen;}
+	50% {color: blue}
+	60% {color: hotpink;}
+	70% {color: lightgreen}
+	80% {color: orange}
+	90% {color: cyan}
+	100% {color: gray}
+}
+
+.real_age {
+	display: none;
+	position: relative;
+}
+
+.real_age__boxes{
+	border: 2px solid rgb(230, 230, 250);
+	background-color: rgb(230, 230, 250, 0.2);
+	border-radius: 10px;
+	letter-spacing: 0.2rem;
+	margin-left: 3%;
+	display: flex;
+	grid-gap: 1%;
+	flex-wrap: wrap;
+	margin-bottom: 1%;
+	padding-left: 1%;
+}
+
+.choice {
+	padding: 0 1%;
+	border: 2px solid rgb(230, 230, 250);
+	background-color: rgb(230, 230, 250, 0.5);
+	border-radius: 10px;
+	cursor: pointer; 
+	margin: 1% 0;
+}
+
+.choice:hover {
+	background-color: rgb(230, 230, 250, 1);
+}
+
+.selected {
+	background-color: rgb(210, 230, 250, 1);
+}
+
+.real_age__boxes p{
+	margin-top: 1%;
+}
+
+.conslusion_btn {
+	margin: 0 auto;
+	width: 30%;
+	padding: 0 1%;
+	border: 2px solid rgb(230, 230, 250);
+	background-color: rgb(230, 230, 250, 0.5);
+	border-radius: 10px;
+	cursor: pointer; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.result {
+	display: none;
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	background-color: rgb(230, 230, 250, 1);
+	top: 30vh;
+	left: 40vw;
+	font-size: 30px;
+	border: 2px solid gray;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	padding: 0 1%;
+}
