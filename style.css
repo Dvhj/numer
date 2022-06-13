@@ -126,6 +126,10 @@ main {
 	background-color: rgb(230, 230, 250, 1);
 }
 
+.choice:active {
+	background-color:rgb(210, 230, 250, 1);
+}
+
 .selected {
 	background-color: rgb(210, 230, 250, 1);
 }
@@ -161,4 +165,72 @@ main {
 	justify-content: center;
 	align-items: center;
 	padding: 0 1%;
+}
+
+
+
+
+ @media screen and (max-width: 480px) {
+ 	.image img{
+ 		margin: 0;
+ 	}
+ 	.header_titles{
+ 		justify-content: center
+ 	}
+	.header_titles h1{
+		font-size:25px;
+	}
+	.subtitle_one {
+		display: none
+	}
+	.title {}
+	.subtitle_two {
+		display: none
+	}
+	main{
+		flex-direction: column;
+	}
+	.menu {
+		width: 100vw;
+	}
+	.menu_title {
+		cursor: pointer
+	}
+	.menu_box {
+		display: none;
+		position: absolute;
+		background-color: lightcyan;
+		width: 100vw;
+		left: 0;
+		z-index: 100;
+	}
+	.section {
+		width: 100vw;
+	}
+	.section_window {
+		margin: 0;
+		padding: 0 2%;
+		font-size:20px;
+	}
+	.pause_block {}
+	.real_age {}
+	.real_age__title {}
+	.real_age__boxes {
+		margin-left: 0;
+	}
+	.age {}
+	.choice {}
+	.sex {}
+	.withoutMam {}
+	.cashbox {}
+	.yesterday {}
+	.popit {}
+	.conslusion_btn {}
+	.advertising {
+		width: 100vw;
+	}
+	.result {
+		width: 100vw;
+		left: 0;
+	}
 }
