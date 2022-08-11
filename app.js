@@ -7,6 +7,8 @@ const choice = document.querySelectorAll('.choice')
 const blocksQuestions = document.querySelectorAll('.real_age__boxes')
 const conslusion = document.querySelector('.conslusion_btn')
 const result = document.querySelector('.result')
+const hair = document.querySelector('.hair ')
+const section_window = document.querySelector('.section_window')
 
 let menu_count = false
 
@@ -26,10 +28,21 @@ menu.addEventListener('click', () => {
 menuChoice.forEach(item => {
 	item.addEventListener('click', () => {
 			if (item.dataset.menu == 'age') {
-				pause_block.style.display = 'none'
+				console.log('age')
+				section_window.style.display = 'none'
 				real_age.style.display = 'block'
 				toGuessAge()
+			} else if (item.dataset.menu == 'hair') {
+				console.log('hair')
+				section_window.style.display = 'none'
+				hair.style.display = 'block'
+				toGuessAge()
+			} else {
+				console.log('null')
+				section_window.style.display = 'none'
+				pause_block.style.display = 'block'
 			}
+
 	})
 })
 
@@ -53,7 +66,7 @@ function toGuessAge() {
 	})
 
 	conslusion.addEventListener('click', () => {
-		if ( pos == 6) {
+		if ( pos == 8) {
 			result.style.display = 'flex'
 			result.textContent= `Ваш реальный возраст -  ${count}`
 		}
