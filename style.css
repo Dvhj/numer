@@ -16,7 +16,17 @@ header {
 	margin-top: 10px;
 	margin-left: 50px;
 	width: 50px;
+	animation: leftRight 10s infinite;
 }
+
+@keyframes leftRight  {
+	0% {}
+	25% {transform: translate(5px, -5px);}
+	50% {transform: translate(0px, -10px);}
+	75% {transform: translate(-5px, -5px);}
+	100% {}
+}
+
 
 .header_titles{
 	width: 100%;
@@ -165,6 +175,10 @@ main {
 	justify-content: center;
 	align-items: center;
 	padding: 0 1%;
+}
+
+.hair {
+	display: none;
 }
 
 

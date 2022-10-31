@@ -8,7 +8,7 @@ const blocksQuestions = document.querySelectorAll('.real_age__boxes')
 const conslusion = document.querySelector('.conslusion_btn')
 const result = document.querySelector('.result')
 const hair = document.querySelector('.hair ')
-const section_window = document.querySelector('.section_window')
+const section_window = document.querySelectorAll('.section_window')
 
 let menu_count = false
 
@@ -29,17 +29,23 @@ menuChoice.forEach(item => {
 	item.addEventListener('click', () => {
 			if (item.dataset.menu == 'age') {
 				console.log('age')
-				section_window.style.display = 'none'
+				section_window.forEach( item => {
+					item.style.display = 'none'
+				});
 				real_age.style.display = 'block'
 				toGuessAge()
 			} else if (item.dataset.menu == 'hair') {
 				console.log('hair')
-				section_window.style.display = 'none'
+				section_window.forEach( item => {
+					item.style.display = 'none'
+				})
 				hair.style.display = 'block'
-				toGuessAge()
+				toGuessHairs()
 			} else {
 				console.log('null')
-				section_window.style.display = 'none'
+				section_window.forEach( item => {
+					item.style.display = 'none'
+				})
 				pause_block.style.display = 'block'
 			}
 
@@ -73,3 +79,6 @@ function toGuessAge() {
 	})
 }
 
+function toGuessHairs() {
+
+}
