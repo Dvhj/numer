@@ -74,7 +74,8 @@ function toGuessAge() {
 	conslusion.addEventListener('click', () => {
 		if ( pos == 8) {
 			result.style.display = 'flex'
-			result.textContent= `Ваш реальный возраст -  ${count}`
+			let res_text = document.querySelector(".result_text")
+			res_text.textContent= `Ваш реальный возраст -  ${count}`
 		}
 	})
 }
